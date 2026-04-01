@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaxChinta | Product</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html">TaxChinta</a>
+      <nav class="nav-links">
+        <a data-nav href="index.html">Home</a>
+        <a data-nav href="about.html">About</a>
+        <a data-nav href="product.html">Product</a>
+        <a data-nav href="services.html">Services</a>
+        <a data-nav href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <section class="card">
+        <span class="badge">Product architecture</span>
+        <h1>TaxChinta Product Suite</h1>
+        <p class="subtext">
+          This page is centered on your product. It keeps a clean framework similar to modern tax portals,
+          while prioritizing your own features and business workflow.
+        </p>
+      </section>
+
+      <section class="section grid-2">
+        <article class="card">
+          <h2 class="feature-title">Core Product Modules</h2>
+          <ul class="checklist">
+            <li>Client onboarding + KYC checklists</li>
+            <li>ITR/GST/TDS task boards by assignee</li>
+            <li>Reviewer approval stages for error reduction</li>
+            <li>Due-date intelligence and escalation alerts</li>
+            <li>Client portal for secure doc requests</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2 class="feature-title">Node.js DMS Integration (existing)</h2>
+          <p class="subtext">
+            Since your DMS is already developed in Node, TaxChinta can consume it directly so you avoid rebuilding storage.
+          </p>
+          <ul class="checklist">
+            <li><code>POST /api/documents/upload</code> for upload from workflow screens</li>
+            <li><code>GET /api/documents/:id</code> for instant retrieval in review queues</li>
+            <li><code>GET /api/documents?clientId=...</code> for client-level history</li>
+            <li>Optional webhook for processing status + OCR indexing</li>
+          </ul>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>© 2026 TaxChinta</div>
+      <div class="mini">Built for compliance confidence.</div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
