@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaxChinta | Product</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-product">
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html">taxchinta</a>
+      <nav class="nav-links">
+        <a data-nav href="index.html">Home</a>
+        <a data-nav href="about.html">About</a>
+        <a data-nav href="product.html">Product</a>
+        <a data-nav href="services.html">Services</a>
+        <a data-nav href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container grid-2">
+      <section class="card">
+        <h1>Platform Modules</h1>
+        <ul class="checklist">
+          <li>Client onboarding and KYC verification queue</li>
+          <li>ITR/GST/TDS workflow board and reviewer stages</li>
+          <li>Deadline and escalation dashboard</li>
+          <li>Client portal for request & approval status</li>
+        </ul>
+      </section>
+      <section class="card">
+        <h2>Node DMS Integration (already possible)</h2>
+        <p class="subtext">Yes, in platform it is possible. Your existing Node DMS can be connected directly with these endpoints:</p>
+        <ul class="checklist">
+          <li><code>POST /api/documents/upload</code></li>
+          <li><code>GET /api/documents/:id</code></li>
+          <li><code>GET /api/documents?clientId=...</code></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer><div class="container">© 2026 TaxChinta</div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
