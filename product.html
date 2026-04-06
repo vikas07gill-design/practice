@@ -6,10 +6,10 @@
   <title>TaxChinta | Product</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="page-product">
   <header>
     <div class="container nav">
-      <a class="brand" href="index.html">TaxChinta</a>
+      <a class="brand" href="index.html">taxchinta</a>
       <nav class="nav-links">
         <a data-nav href="index.html">Home</a>
         <a data-nav href="about.html">About</a>
@@ -21,50 +21,29 @@
   </header>
 
   <main class="section">
-    <div class="container">
+    <div class="container grid-2">
       <section class="card">
-        <span class="badge">Product architecture</span>
-        <h1>TaxChinta Product Suite</h1>
-        <p class="subtext">
-          This page is centered on your product. It keeps a clean framework similar to modern tax portals,
-          while prioritizing your own features and business workflow.
-        </p>
+        <h1>Platform Modules</h1>
+        <ul class="checklist">
+          <li>Client onboarding and KYC verification queue</li>
+          <li>ITR/GST/TDS workflow board and reviewer stages</li>
+          <li>Deadline and escalation dashboard</li>
+          <li>Client portal for request & approval status</li>
+        </ul>
       </section>
-
-      <section class="section grid-2">
-        <article class="card">
-          <h2 class="feature-title">Core Product Modules</h2>
-          <ul class="checklist">
-            <li>Client onboarding + KYC checklists</li>
-            <li>ITR/GST/TDS task boards by assignee</li>
-            <li>Reviewer approval stages for error reduction</li>
-            <li>Due-date intelligence and escalation alerts</li>
-            <li>Client portal for secure doc requests</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h2 class="feature-title">Node.js DMS Integration (existing)</h2>
-          <p class="subtext">
-            Since your DMS is already developed in Node, TaxChinta can consume it directly so you avoid rebuilding storage.
-          </p>
-          <ul class="checklist">
-            <li><code>POST /api/documents/upload</code> for upload from workflow screens</li>
-            <li><code>GET /api/documents/:id</code> for instant retrieval in review queues</li>
-            <li><code>GET /api/documents?clientId=...</code> for client-level history</li>
-            <li>Optional webhook for processing status + OCR indexing</li>
-          </ul>
-        </article>
+      <section class="card">
+        <h2>Node DMS Integration (already possible)</h2>
+        <p class="subtext">Yes, in platform it is possible. Your existing Node DMS can be connected directly with these endpoints:</p>
+        <ul class="checklist">
+          <li><code>POST /api/documents/upload</code></li>
+          <li><code>GET /api/documents/:id</code></li>
+          <li><code>GET /api/documents?clientId=...</code></li>
+        </ul>
       </section>
     </div>
   </main>
 
-  <footer>
-    <div class="container footer-inner">
-      <div>© 2026 TaxChinta</div>
-      <div class="mini">Built for compliance confidence.</div>
-    </div>
-  </footer>
+  <footer><div class="container">© 2026 TaxChinta</div></footer>
   <script src="script.js"></script>
 </body>
 </html>
